@@ -1,58 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <Button
-        android:id="@+id/btn_show_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Display Dialog"
-        app:layout_constraintBottom_toTopOf="@id/btn_rate_dialog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+      android:id="@+id/btn_show_dialog"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Basic Dialog" />
 
     <Button
-        android:id="@+id/btn_rate_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Display Rate Dialog"
-        app:layout_constraintBottom_toBottomOf="@id/btn_dialog_with_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_show_dialog" />
+      android:id="@+id/btn_rate_dialog"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Rate Dialog (3 Buttons)" />
 
     <Button
-        android:id="@+id/btn_dialog_with_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Display Dialog with Icon"
-        app:layout_constraintBottom_toBottomOf="@id/btn_multiselect"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_rate_dialog" />
+      android:id="@+id/btn_dialog_with_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Dialog with Icon" />
 
     <Button
-        android:id="@+id/btn_multiselect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dialog with Multiple Selection"
-        app:layout_constraintBottom_toBottomOf="@id/btn_single_selection"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_dialog_with_icon" />
+      android:id="@+id/btn_multiselect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Multi-Choice Selection" />
 
     <Button
-        android:id="@+id/btn_single_selection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dialog with Single Selection"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_multiselect" />
+      android:id="@+id/btn_single_selection"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Single-Choice Selection" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+      android:id="@+id/btn_custom_xml_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Custom XML Layout Dialog" />
+
+    <Button
+      android:id="@+id/btn_programmatic_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Programmatic Custom Layout" />
+
+    <Button
+      android:id="@+id/btn_button_color"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Button Color Customization" />
+
+    <Button
+      android:id="@+id/btn_override_click"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Override Button Click" />
+
+  </LinearLayout>
+</ScrollView>
