@@ -1,0 +1,9 @@
+name: Android CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  build:
+    uses: krrishnaaaa/android-ci/.github/workflows/build.yml@main
